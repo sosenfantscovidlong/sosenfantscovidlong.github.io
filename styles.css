@@ -88,6 +88,14 @@ section:nth-child(even) { background: var(--off-white); }
   display: flex; align-items: center; justify-content: space-between;
   height: 100%;
 }
+/* RESPONSIVE: Adjust nav padding for smaller screens */
+@media (max-width: 768px) {
+  /* Reduce nav-inner padding to give more space to logo */
+  #nav .nav-inner { padding: 0 16px; }
+}
+@media (max-width: 480px) {
+  #nav .nav-inner { padding: 0 12px; }
+}
 .logo-link {
   display: inline-block;
   padding: 8px;
@@ -107,6 +115,19 @@ section:nth-child(even) { background: var(--off-white); }
   height: 100px;
   display: block;
   border-radius: 4px;
+}
+/* RESPONSIVE: Constrain logo height on mobile to prevent nav overflow */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .logo-img {
+    width: 50px;
+    height: 50px;
+  }
 }
 .nav-brand span.heart { color: var(--orange); font-size: 1.1rem; }
 .nav-links { display: flex; gap: 4px; align-items: center; }
@@ -316,7 +337,8 @@ section:nth-child(even) { background: var(--off-white); }
   border-top: 1px solid rgba(255,255,255,.1);
 }
 .testimonial-author strong { color: var(--orange-light); font-size: .9rem; }
-.testimonial-author span { color: rgba(255,255,255,.8); font-size: .8rem; }
+/* ACCESSIBILITY: Increased opacity from .8 to .92 for WCAG AA contrast (6.8:1 on navy) */
+.testimonial-author span { color: rgba(255,255,255,.92); font-size: .8rem; }
 
 /* ── DRAMES / PROBLÈMES ── */
 .drames-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px; }
@@ -606,6 +628,18 @@ section:nth-child(even) { background: var(--off-white); }
   .hero-photos { gap: 20px; }
 }
 
+/* BREAKPOINT: Tablettes larges (1024px–1599px) — transitions fluides */
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .container { max-width: 1000px; padding: 0 20px; }
+  h1 { font-size: clamp(2.2rem, 4.5vw, 3rem); }
+  h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+  section { padding: 80px 0; }
+  .stats-grid { gap: 28px; }
+  .testimonials-grid { gap: 28px; }
+  .drames-grid { gap: 28px; }
+  .demandes-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+}
+
 /* Écrans moyens/tablettes paysage (768px–1199px) — adaptations intermédiaires */
 @media (max-width: 1199px) {
   .container { padding: 0 20px; }
@@ -637,8 +671,8 @@ section:nth-child(even) { background: var(--off-white); }
   .contact-grid { gap: 32px; margin-bottom: 48px; }
 }
 
-/* Tablettes (768px–1199px) */
-@media (max-width: 768px) {
+/* Tablettes (768px–1023px) */
+@media (max-width: 1023px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
   h1 { font-size: clamp(1.5rem, 3.5vw, 2.4rem); }
@@ -646,8 +680,8 @@ section:nth-child(even) { background: var(--off-white); }
   section { padding: 60px 0; }
   .section-header { margin-bottom: 40px; }
   .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
-  .stats-card { padding: 20px 16px; }
-  .stat-number { font-size: clamp(1.5rem, 3.5vw, 2.2rem); }
+  /* MOBILE: Ensure text remains readable */
+  .testimonial-text { font-size: .92rem; margin-bottom: 20px; }
   .testimonials-grid { grid-template-columns: 1fr; gap: 16px; }
   .testimonial-card { padding: 20px 18px; }
   .drames-grid { grid-template-columns: 1fr; gap: 16px; }
