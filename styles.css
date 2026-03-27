@@ -91,10 +91,11 @@ section:nth-child(even) { background: var(--off-white); }
 .nav-brand {
   font-family: var(--font-serif);
   font-size: 1.05rem;
-  color: var(--white);
+  color: #ffffff !important;
   letter-spacing: .02em;
   display: flex; align-items: center; gap: 10px;
   white-space: nowrap;
+  text-decoration: none;
 }
 .nav-brand span.heart { color: var(--orange); font-size: 1.1rem; }
 .nav-links { display: flex; gap: 4px; align-items: center; }
