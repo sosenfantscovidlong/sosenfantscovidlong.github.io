@@ -479,7 +479,7 @@ section:nth-child(even) { background: var(--off-white); }
 .demande-cat-sub { font-size: .8rem; color: var(--gray-500); }
 .demande-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .demande-list li {
-  display: flex; gap: 10px; align-items: flex-start;
+  display: flex; gap: 12px; align-items: flex-start;
   font-size: .88rem; color: var(--gray-700); line-height: 1.55;
 }
 .demande-list li::before {
