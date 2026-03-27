@@ -229,8 +229,8 @@ section:nth-child(even) { background: var(--off-white); }
   margin-bottom: 12px;
 }
 .section-title { color: var(--navy); margin-bottom: 16px; }
-.section-intro { color: var(--gray-500); font-size: 1.05rem; max-width: 640px; margin: 0 auto; }
-.section-intro.light { color: rgba(255,255,255,.7); }
+.section-intro { color: #4a5568; font-size: 1.05rem; max-width: 640px; margin: 0 auto; }
+.section-intro.light { color: rgba(255,255,255,.9); }
 .divider { width: 48px; height: 3px; background: var(--orange); margin: 20px auto 0; border-radius: 2px; }
 
 /* ── STATS / CHIFFRES CLÉS ── */
@@ -260,7 +260,7 @@ section:nth-child(even) { background: var(--off-white); }
   margin-bottom: 12px;
 }
 .stat-number .unit { font-size: .55em; vertical-align: middle; }
-.stat-label { font-size: .88rem; color: var(--gray-500); line-height: 1.4; }
+.stat-label { font-size: .88rem; color: #4a5568; line-height: 1.4; }
 .stat-source { color: var(--gray-300); font-size: .78rem; }
 .stat-card.alert .stat-number { color: var(--orange); }
 .stat-card.zero .stat-number { color: #c0392b; font-size: 4rem; }
@@ -280,7 +280,7 @@ section:nth-child(even) { background: var(--off-white); }
 /* ── TÉMOIGNAGES ── */
 #temoignages { background: var(--navy); }
 #temoignages .section-title { color: var(--white); }
-#temoignages .section-intro { color: rgba(255,255,255,.8); }
+#temoignages .section-intro { color: rgba(255,255,255,.92); }
 #temoignages .section-label { color: var(--orange-light); }
 
 .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
@@ -348,7 +348,7 @@ section:nth-child(even) { background: var(--off-white); }
   color: var(--gray-700);
   line-height: 1.65;
 }
-.drame-quote .cite { display: block; margin-top: 8px; font-style: normal; font-size: .8rem; color: var(--gray-500); font-weight: 600; }
+.drame-quote .cite { display: block; margin-top: 8px; font-style: normal; font-size: .8rem; color: #5a6b7d; font-weight: 600; }
 .drame-body { font-size: .9rem; color: var(--gray-700); }
 
 /* ── SITUATION FRANCE ── */
@@ -423,7 +423,7 @@ section:nth-child(even) { background: var(--off-white); }
   font-style: italic; font-size: .9rem; color: var(--gray-700); line-height: 1.7;
   margin: 12px 0;
 }
-.ministere-quote .reponse { font-size: .82rem; color: var(--gray-500); }
+.ministere-quote .reponse { font-size: .82rem; color: #5a6b7d; }
 
 .warning-banner {
   background: #1a2b4a;
@@ -456,7 +456,7 @@ section:nth-child(even) { background: var(--off-white); }
   font-size: .82rem; font-weight: 700; color: var(--blue);
 }
 .country-body { font-size: .87rem; color: var(--gray-700); line-height: 1.6; }
-.country-sources { margin-top: 12px; font-size: .75rem; color: var(--gray-500); }
+.country-sources { margin-top: 12px; font-size: .75rem; color: #5a6b7d; }
 .country-card-image {
   float:right;
   margin: 0 0 12px 16px;
@@ -542,10 +542,10 @@ section:nth-child(even) { background: var(--off-white); }
 .contact-section h3 { font-size: 1rem; color: var(--white); margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,.15); }
 .contact-person { margin-bottom: 20px; }
 .contact-person strong { color: var(--orange-light); font-size: .95rem; display: block; margin-bottom: 6px; }
-.contact-person a { color: rgba(255,255,255,.8); font-size: .88rem; display: block; margin-bottom: 4px; }
+.contact-person a { color: rgba(255,255,255,.92); font-size: .88rem; display: block; margin-bottom: 4px; }
 .contact-person a:hover { color: var(--white); }
 .contact-info-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.contact-info-list li { color: rgba(255,255,255,.8); font-size: .88rem; display: flex; align-items: flex-start; gap: 8px; }
+.contact-info-list li { color: rgba(255,255,255,.92); font-size: .88rem; display: flex; align-items: flex-start; gap: 8px; }
 .contact-info-list li .ic { color: var(--orange-light); }
 
 .footer-bottom {
@@ -553,8 +553,8 @@ section:nth-child(even) { background: var(--off-white); }
   padding: 24px 0;
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
 }
-.footer-bottom p { color: rgba(255,255,255,.8); font-size: .8rem; }
-.footer-logo { font-family: var(--font-serif); color: rgba(255,255,255,.8); font-size: .9rem; }
+.footer-bottom p { color: rgba(255,255,255,.92); font-size: .8rem; }
+.footer-logo { font-family: var(--font-serif); color: rgba(255,255,255,.92); font-size: .9rem; }
 .footer-logo span { color: var(--orange); }
 
 /* ── BACK TO TOP ── */
