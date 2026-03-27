@@ -88,14 +88,25 @@ section:nth-child(even) { background: var(--off-white); }
   display: flex; align-items: center; justify-content: space-between;
   height: 100%;
 }
-.nav-brand {
-  font-family: var(--font-serif);
-  font-size: 1.05rem;
-  color: #ffffff !important;
-  letter-spacing: .02em;
-  display: flex; align-items: center; gap: 10px;
-  white-space: nowrap;
-  text-decoration: none;
+.logo-link {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+  line-height: 1;
+}
+.logo-link:hover {
+  opacity: 0.85;
+}
+.logo-link:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+}
+.logo-img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  border-radius: 4px;
 }
 .nav-brand span.heart { color: var(--orange); font-size: 1.1rem; }
 .nav-links { display: flex; gap: 4px; align-items: center; }
