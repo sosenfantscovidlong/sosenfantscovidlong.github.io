@@ -7,13 +7,13 @@ html { scroll-behavior: smooth; font-size: 16px; }
   --navy:   #1a2b4a;
   --blue:   #2c5282;
   --blue-light: #3a6fa8;
-  --orange: #e07320;
-  --orange-light: #f5a623;
+  --orange: #c8641a;
+  --orange-light: #d87e0f;
   --white:  #ffffff;
   --off-white: #f7f8fa;
   --gray-50:  #f0f2f5;
   --gray-100: #e2e6ea;
-  --gray-300: #b0bac8;
+  --gray-300: #8795a3;
   --gray-500: #6b7a8d;
   --gray-700: #3d4d60;
   --text:   #1e2d3d;
@@ -41,9 +41,9 @@ body {
     --off-white: #2d2d2d;
     --gray-50: #333333;
     --gray-100: #444444;
-    --gray-300: #555555;
-    --gray-500: #888888;
-    --gray-700: #aaaaaa;
+    --gray-300: #aaaaaa;
+    --gray-500: #cccccc;
+    --gray-700: #e0e0e0;
     --text: #e8e8e8;
   }
   body { background: var(--white); }
@@ -273,8 +273,8 @@ section:nth-child(even) { background: var(--off-white); }
 
 .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
 .testimonial-card {
-  background: rgba(255,255,255,.06);
-  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.25);
   border-radius: 10px;
   padding: 32px 28px;
   position: relative;
@@ -568,7 +568,7 @@ section:nth-child(even) { background: var(--off-white); }
 .mt-4 { margin-top: 1rem; }
 .mt-8 { margin-top: 2rem; }
 .badge-red {
-  display: inline-block; background: #fef2f2; color: #b91c1c;
+  display: inline-block; background: #fef2f2; color: #7f1d1d;
   border: 1px solid #fca5a5; border-radius: 12px;
   padding: 4px 12px; font-size: .78rem; font-weight: 700;
 }
@@ -682,7 +682,7 @@ section:nth-child(even) { background: var(--off-white); }
 .hero-photo-item img {
   width: 160px; height: 210px; object-fit: cover; object-position: top;
   border-radius: 10px;
-  border: 3px solid rgba(255,255,255,.2);
+  border: 3px solid rgba(255,255,255,.4);
   box-shadow: 0 8px 32px rgba(0,0,0,.4);
   transition: transform .3s;
 }
@@ -703,7 +703,7 @@ section:nth-child(even) { background: var(--off-white); }
 }
 .temo-photos img {
   width: 130px; height: 160px; object-fit: cover; object-position: top;
-  border-radius: 8px; border: 2px solid rgba(255,255,255,.15);
+  border-radius: 8px; border: 2px solid rgba(255,255,255,.4);
   filter: grayscale(20%);
   transition: all .3s;
 }
