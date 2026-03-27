@@ -87,6 +87,8 @@ section:nth-child(even) { background: var(--off-white); }
   max-width: 1200px; margin: 0 auto; padding: 0 24px;
   display: flex; align-items: center; justify-content: space-between;
   height: 100%;
+  /* SPACING: Add gap to bring logo closer to nav menu */
+  gap: 20px;
 }
 /* RESPONSIVE: Adjust nav padding for smaller screens */
 @media (max-width: 768px) {
