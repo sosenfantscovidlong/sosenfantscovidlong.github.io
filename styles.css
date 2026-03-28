@@ -9,11 +9,12 @@ html { scroll-behavior: smooth; font-size: 16px; }
   --blue-light: #3a6fa8;
   --orange: #c8641a;
   --orange-light: #d87e0f;
+  --orange-dark: #a84f0d;
   --white:  #ffffff;
   --off-white: #f7f8fa;
   --gray-50:  #f0f2f5;
   --gray-100: #e2e6ea;
-  --gray-300: #8795a3;
+  --gray-300: #6b7a8d;
   --gray-500: #6b7a8d;
   --gray-700: #3d4d60;
   --text:   #1e2d3d;
@@ -145,7 +146,7 @@ section:nth-child(even) { background: var(--off-white); }
   text-transform: uppercase;
 }
 .nav-links a:hover { color: var(--white); background: rgba(255,255,255,.1); }
-.nav-links a.active { color: var(--orange-light); }
+.nav-links a.active { color: var(--orange-dark); }
 
 /* hamburger */
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
@@ -248,7 +249,8 @@ section:nth-child(even) { background: var(--off-white); }
 .section-label {
   display: inline-block;
   font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
-  color: var(--orange); font-weight: 700;
+  /* ACCESSIBILITY: Use orange-dark for WCAG AA contrast on white bg */
+  color: var(--orange-dark); font-weight: 700;
   margin-bottom: 12px;
 }
 .section-title { color: var(--navy); margin-bottom: 16px; }
@@ -387,7 +389,8 @@ section:nth-child(even) { background: var(--off-white); }
 .alert-box .alert-title {
   font-family: var(--font-serif);
   font-size: 1rem; font-weight: 700;
-  color: var(--orange); margin-bottom: 10px;
+  /* ACCESSIBILITY: Navy text on orange bg for 11.67:1 contrast (AAA) */
+  color: var(--navy); margin-bottom: 10px;
   display: flex; align-items: center; gap: 8px;
 }
 .alert-box p { font-size: .9rem; color: var(--gray-700); }
@@ -702,6 +705,10 @@ section:nth-child(even) { background: var(--off-white); }
   .stats-card { padding: 18px 14px; }
   .stat-number { font-size: clamp(1.3rem, 3vw, 1.9rem); }
   .stat-label { font-size: .8rem; }
+  /* ACCESSIBILITY: Increase small text readability on mobile */
+  .stat-source { font-size: 13px; line-height: 1.6; }
+  .section-label { font-size: 13px; line-height: 1.6; letter-spacing: 0.15em; }
+  .drame-quote .cite { font-size: 11px; line-height: 1.4; }
   .section-header { margin-bottom: 32px; }
   .section-title { font-size: clamp(1.2rem, 2vw, 1.4rem); }
   .testimonial-card { padding: 18px 16px; }
