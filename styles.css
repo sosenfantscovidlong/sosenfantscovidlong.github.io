@@ -58,6 +58,8 @@ body.orange-theme .nav-links a:hover {
   color: #f06435;
   background: #ffffff;
 }
+body.orange-theme .theme-toggle { color: #ffffff; opacity: .9; }
+body.orange-theme .theme-toggle:hover { background: rgba(255,255,255,.15); opacity: 1; }
 body.orange-theme .btn-primary, body.orange-theme .agir-btn-primary { background: #ffffff; color: #f06435; }
 body.orange-theme .btn-secondary,
 body.orange-theme .agir-btn-secondary { color: #ffffff; border-color: rgba(255,255,255,.8); }
@@ -180,6 +182,16 @@ section:nth-child(even) { background: var(--off-white); }
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
 .hamburger:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
 .hamburger span { width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all .3s; }
+
+/* theme toggle */
+.theme-toggle {
+  font-size: 1.2rem; cursor: pointer; padding: 4px 8px; background: none; border: none;
+  border-radius: var(--radius); transition: all var(--transition); display: flex; align-items: center;
+  color: var(--white); opacity: .8;
+}
+.theme-toggle:hover { opacity: 1; background: rgba(255,255,255,.1); }
+.theme-toggle:focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+
 .mobile-menu {
   display: none; position: fixed; top: var(--nav-h); left: 0; right: 0; z-index: 999;
   background: var(--navy); padding: 16px 24px;
